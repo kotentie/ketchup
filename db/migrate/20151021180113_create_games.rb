@@ -1,0 +1,11 @@
+class CreateGames < ActiveRecord::Migration
+  def change
+    create_table :games do |t|
+      t.string :map
+      t.string :score
+      t.string :videolink
+
+      t.timestamps null: false
+    end
+  end
+end
