@@ -37,11 +37,12 @@ ActiveRecord::Schema.define(version: 20151021193536) do
   add_index "groupmatches", ["match_id"], name: "index_groupmatches_on_match_id", using: :btree
 
   create_table "matches", force: :cascade do |t|
+    t.string   "name",          limit: 255
     t.date     "matchdate"
     t.integer  "matchorder",    limit: 4
     t.integer  "tournament_id", limit: 4
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   add_index "matches", ["tournament_id"], name: "index_matches_on_tournament_id", using: :btree
