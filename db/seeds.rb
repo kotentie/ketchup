@@ -54,12 +54,12 @@ end
 
 
 games_list = [
-	["Cobblestone", "https://www.youtube.com/watch?v=kYRw_DdlnmE"],
-	["Mirage", "https://www.youtube.com/watch?v=LHgdZR4fAcU"],
-	["Cobblestone", "https://www.youtube.com/watch?v=EFawjRIzR2s"],
-	["Overpass", "https://www.youtube.com/watch?v=PSRAZndiOhc"],
-	["Cache", "https://www.youtube.com/watch?v=MrlGbfgPR28"],
-	["Dust2", "https://www.youtube.com/watch?v=IPz8IWBxejI"]
+	["Cobblestone", "http://www.youtube.com/embed/kYRw_DdlnmE"],
+	["Mirage", "http://www.youtube.com/embed/LHgdZR4fAcU"],
+	["Cobblestone", "http://www.youtube.com/embed/EFawjRIzR2s"],
+	["Overpass", "http://www.youtube.com/embed/PSRAZndiOhc"],
+	["Cache", "http://www.youtube.com/embed/MrlGbfgPR28"],
+	["Dust2", "http://www.youtube.com/embed/IPz8IWBxejI"]
 ]
 
 games_list.each_with_index do |game, i|

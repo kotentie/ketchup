@@ -4,7 +4,11 @@ def new
 end
 
 def create
-	render plain: params[:match].inspect
+end
+
+def show
+	@match = Match.find(params[:id])
+	@games = Game.where(:match_id => params[:id])	
 end
 
 end

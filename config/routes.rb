@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tournament/index'
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,8 +8,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    resources :matches
+
+   resources :tournaments
    
-   root 'home#index'
+   root 'tournaments#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
