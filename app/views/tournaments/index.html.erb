@@ -1,6 +1,12 @@
-<h1>CS:GO Tournaments</h1>
-<ul>
-<% @tournaments.each do |tournament, i| %>
- <li> <a href="/tournaments/<%= tournament.id%>"><%= tournament.name %></a></li>
-<% end %>
-</ul>
+<div id="main-container" class="container">
+	<h1>CS:GO Tournaments</h1>
+	<div class="row">
+		<div class="col-xs-3">
+			<ul>
+			<% @tournaments.each do |tournament, i| %>
+				<li> <a href="/tournaments/<%= tournament.id%>"><%= tournament.name %></a></li>
+			<% end %>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+	<h1>CS:GO Matches</h1>
+	<div class="row">
+		<div class="col-xs-8">
+			<ul>
+			<% @matches.each do |match, i| %>
+				<li> <a href="/matches/<%= match.id%>"><%= match.name %></a></li>
+			<% end %>
+			</ul>
+		</div>
+	</div>
