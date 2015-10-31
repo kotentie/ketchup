@@ -1,5 +1,8 @@
 <h1> <%= @tournament.name %> </h1>
+<ul>
 <% @matches.each do |match| %>
-<a href="/matches/<%= match.id %>"><%= match.name %></a>
+<li><a href="/matches/<%= match.id %>">Match <%= match.matchorder %></a></li>
 <% end %>
-
+</ul>
+<p>&nbsp</p>
+<a href="/">Back</a>
