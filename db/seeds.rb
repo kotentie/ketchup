@@ -69,7 +69,7 @@ match_list = [
 
 match_list2 = [
 
-  ["Luminosity Gaming vs. Cloud9 - Dust 2 - Group Stage - ",1, tournament2.id],
+       ["Luminosity Gaming vs. Cloud9 - Dust 2 - Group Stage - ",1, tournament2.id],
        ["Fnatic vs. Vexed Gaming - Cobblestone - Group Stage - ",2, tournament2.id],
        ["Virtus.Pro vs. Team Liquid - Cobblestone - Group Stage - ",3, tournament2.id],
        ["G2 Esports vs. mousesports - Inferno - Group Stage - ", 4, tournament2.id],
@@ -96,7 +96,23 @@ match_list2 = [
        ["Natus Vincere vs. CLG - Cobblestone - Decider Match - Game 2 - ",25, tournament2.id],
        ["Team EnVyUs vs. Fnatic - Mirage - Quarter-final - Game 1 - ",26, tournament2.id],
        ["Team EnVyUs vs. Fnatic - Cobblestone - Quarter-final - Game 2 - ",27, tournament2.id],
-       ["Team EnVyUs vs. Fnatic - Cache - Quarter-final - Game 3 - ",28, tournament2.id]
+       ["Team EnVyUs vs. Fnatic - Cache - Quarter-final - Game 3 - ",28, tournament2.id],
+       ["Virtus.Pro vs. G2 Esports - Cache - Quarter-final - Game 1",29, tournament2.id],
+       ["Virtus.Pro vs. G2 Esports - Train - Quarter-final - Game 2", 30, tournament2.id],
+       ["TSM vs. Ninjas in Pyjamas - Train - Quarter-final - Game 1", 31, tournament2.id],
+       ["TSM vs. Ninjas in Pyjamas - Dust 2 - Quarter-final - Game 2", 32, tournament2.id],
+       ["Luminosity vs. Natus Vincere - Dust 2 - Quarter-final - Game 1", 33, tournament2.id],
+       ["Luminosity vs. Natus Vincere - Overpass - Quarter-final - Game 2", 34, tournament2.id],
+       ["Team EnVyUs vs. G2 Esports - Dust 2 - Semi-final - Game 1", 35, tournament2.id],
+       ["Team EnVyUs vs. G2 Esports - Inferno - Semi-final - Game 2", 36, tournament2.id],
+       ["Team EnVyUs vs. G2 Esports - Cache - Semi-final - Game 3", 37, tournament2.id],
+       ["Ninjas in Pyjamas vs. Natus Vincere - Train - Semi-final - Game 1", 38, tournament2.id],
+       ["Ninjas in Pyjamas vs. Natus Vincere - Dust 2 - Semi-final - Game 2", 39, tournament2.id],
+       ["EnVyUs vs. Natus Vincere - Train - Grand-final - Game 1", 40, tournament2.id],
+       ["EnVyUs vs. Natus Vincere - Cobblestone - Grand-final - Game 2", 41, tournament2.id],
+       ["This Game is Just Here So you can't see that it was a two map final", 42, tournament2.id]
+
+
   
 ]
 
@@ -111,29 +127,31 @@ end
 
 
 games_list = [
-	["Cobblestone", "http://www.youtube.com/embed/kYRw_DdlnmE"],
-	["Mirage", "http://www.youtube.com/embed/LHgdZR4fAcU"],
-	["Cobblestone", "http://www.youtube.com/embed/EFawjRIzR2s"],
-	["Overpass", "http://www.youtube.com/embed/PSRAZndiOhc"],
-	["Cache", "http://www.youtube.com/embed/MrlGbfgPR28"],
-  ["Dust2", "http://www.youtube.com/embed/IPz8IWBxejI"],
-  ["Cobblestone", "http://www.youtube.com/embed/bC49ebnTlUI"],
-  ["Dust2", "http://www.youtube.com/embed/1eq3ZroT0fc"],
-  ["Dust2", "http://www.youtube.com/embed/OhYc8Llowgg"],
-  ["Inferno", "http://www.youtube.com/embed/b6Slbne36So"],
-  ["Train", "http://www.youtube.com/embed/29oeTvuxMo"],
-  ["Inferno", "http://www.youtube.com/embed/zAGQBt_VhqU"],
-  ["Dust2", "http://www.youtube.com/embed/cWTb_MzfwQM"],
-  ["Mirage", "http://www.youtube.com/embed/GFj4-OcXRDg"],
-  ["Inferno", "http://www.youtube.com/embed/Qz5ErHaVsUc"],
-  ["Cobblestone", "http://www.youtube.com/embed/u7iHcbdHpT0"],
-  ["Train", "http://www.youtube.com/embed/x2GQ9KCQIEs"],
-  ["Cache", "http://www.youtube.com/embed/oi9zwKpOKh8"],
-  ["Overpass", "http://www.youtube.com/embed/DA0iptQxFZQ"],
-  ["Train", "http://www.youtube.com/embed/tncJS5DLDsc"],
-  ["Dust2", "http://www.youtube.com/embed/VpBNVJkZMpE"],
-  ["Cobblestone", "http://www.youtube.com/embed/CnTs9itCCHQ"],
-  ["Mirage", "http://www.youtube.com/embed/_uXxcMuTuMg"]
+	["Cobblestone", "http://www.youtube.com/embed/kYRw_DdlnmE",1],
+	["Mirage", "http://www.youtube.com/embed/LHgdZR4fAcU",2],
+	["Cobblestone", "http://www.youtube.com/embed/EFawjRIzR2s",3],
+	["Overpass", "http://www.youtube.com/embed/PSRAZndiOhc",4],
+	["Cache", "http://www.youtube.com/embed/MrlGbfgPR28",5],
+  ["Dust2", "http://www.youtube.com/embed/IPz8IWBxejI",6],
+  ["Cobblestone", "http://www.youtube.com/embed/bC49ebnTlUI",7],
+  ["Dust2", "http://www.youtube.com/embed/1eq3ZroT0fc",8],
+  ["Dust2", "http://www.youtube.com/embed/OhYc8Llowgg", 9],
+  ["Inferno", "http://www.youtube.com/embed/b6Slbne36So", 10],
+  ["Train", "http://www.youtube.com/embed/29oeTvuxMo", 11],
+  ["Inferno", "http://www.youtube.com/embed/zAGQBt_VhqU", 12],
+  ["Dust2", "http://www.youtube.com/embed/cWTb_MzfwQM", 13],
+  ["Mirage", "http://www.youtube.com/embed/GFj4-OcXRDg",14],
+  ["Inferno", "http://www.youtube.com/embed/Qz5ErHaVsUc",15],
+  ["Cobblestone", "http://www.youtube.com/embed/u7iHcbdHpT0",16],
+  ["Train", "http://www.youtube.com/embed/x2GQ9KCQIEs",17],
+  ["Cache", "http://www.youtube.com/embed/oi9zwKpOKh8",18],
+  ["Overpass", "http://www.youtube.com/embed/DA0iptQxFZQ",19],
+  ["Train", "http://www.youtube.com/embed/tncJS5DLDsc",20],
+  ["Dust2", "http://www.youtube.com/embed/VpBNVJkZMpE",21],
+  ["Cobblestone", "http://www.youtube.com/embed/CnTs9itCCHQ",22],
+  ["Mirage", "http://www.youtube.com/embed/_uXxcMuTuMg",23]
+
+
 ]
 
 matchid = 0
@@ -143,43 +161,56 @@ games_list.each_with_index do |game, i|
   matchid += 1
 end
 
-
 matchid += 1
-
 
 games_list2 = [
 
-       ["Luminosity Gaming vs. Cloud9 - Dust 2 - Group Stage - ", "http://www.youtube.com/embed/xRQy4PpBkAU" ,1],
-       ["Fnatic vs. Vexed Gaming - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/9Tw3qcNbzhA",2],
-       ["Virtus.Pro vs. Team Liquid - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/101eoTIJ6sM",3],
-       ["G2 Esports vs. mousesports - Inferno - Group Stage - ", "http://www.youtube.com/embed/-9NZL4UQNl8",4],
-       ["Team Solomid vs. Flipsid3 Tactics - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/oq3pSnwXWSA",5],
-       ["Ninjas In Pyjamas vs. Titan - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/Jz-GTF9tAOk",6],
-       ["Team EnVyUs vs. Team Dignitas - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/qbHkC40Kcmw",7],
-       ["Natus Vincere vs. Counter Logic Gaming - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/JjQHFrwpszY",8],
-       ["Cloud9 vs. Vexed Gaming - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/ealMl7CUrjs",9],
-       ["Flipsid3 Tactics vs. mousesports - Overpass - Group Stage - ", "http://www.youtube.com/embed/YbKEKWZoqpk",10],
-       ["Ninjas In Pyjamas vs. Team Liquid - Mirage - Group Stage - ", "http://www.youtube.com/embed/2j72wRXJ-cQ",11],
-       ["Team Dignitas vs. Counter Logic Gaming - Cobblestone - Group Stage - ", "http://www.youtube.com/embed/jj30-V2fYuk",12],
-       ["Fnatic vs. Luminosity Gaming - Inferno - Group Stage - ", "http://www.youtube.com/embed/699smFGY69s",13],
-       ["Team Solomid vs. G2 Esports - Dust 2 - Group Stage - ", "http://www.youtube.com/embed/V1dWMSSD0S4",14],
-       ["Virtus.pro vs. Titan - Train - Group Stage - ", "http://www.youtube.com/embed/1ThPMbp8rF8",15],
-       ["Fnatic vs. Cloud9 - Dust 2 - Decider Match - Game 1 - ", "http://www.youtube.com/embed/Y4Py_E-QA00",16],
-       ["Fnatic vs. Cloud9 - Overpass - Decider Match - Game 2 - ", "http://www.youtube.com/embed/oc2-Uwf9QR0",17],
-       ["Team EnVyUs vs. Natus Vincere - Mirage - Group Stage - ", "http://www.youtube.com/embed/MHQbOxIzjoU",18],
-       ["G2 Esports vs. mousesports - Mirage - Decider Match - Game 1 - ", "http://www.youtube.com/embed/wkI1Ce2pwUg",19],
-       ["G2 Esports vs. mousesports - Inferno - Decider Match - Game 2 - ", "http://www.youtube.com/embed/8o_g8wj_qbc",20],
-       ["G2 Esports vs. mousesports - Cache - Decider Match - Game 3 - ", "http://www.youtube.com/embed/o6WWm37jZrE",21],
-       ["Titan vs. Ninjas in Pyjamas - Cache - Decider Match - Game 1 - ", "http://www.youtube.com/embed/zAaJSVOtjKU",22],
-       ["Titan vs. Ninjas in Pyjamas - Dust 2 - Decider Match - Game 2 - ", "http://www.youtube.com/embed/K9M9Y-WLRN8",23],
-       ["Natus Vincere vs. CLG - Train - Decider Match - Game 1 - ", "http://www.youtube.com/embed/Kw_d__GDsBQ",24],
-       ["Natus Vincere vs. CLG - Cobblestone - Decider Match - Game 2 - ", "http://www.youtube.com/embed/S6wVQI2VQZ8",25],
-       ["Team EnVyUs vs. Fnatic - Mirage - Quarter-final - Game 1 - ", "http://www.youtube.com/embed/2OgomRWyJgE",26],
-       ["Team EnVyUs vs. Fnatic - Cobblestone - Quarter-final - Game 2 - ", "http://www.youtube.com/embed/B3CgsadEXI0",27],
-       ["Team EnVyUs vs. Fnatic - Cache - Quarter-final - Game 3 - ", "https://www.youtube.com/embed/NE31g6jg7ok",28]
+       ["Dust 2", "http://www.youtube.com/embed/xRQy4PpBkAU" ,1],
+       ["Cobblestone", "http://www.youtube.com/embed/9Tw3qcNbzhA",2],
+       ["Cobblestone", "http://www.youtube.com/embed/101eoTIJ6sM",3],
+       ["Inferno", "http://www.youtube.com/embed/-9NZL4UQNl8",4],
+       ["Cobblestone", "http://www.youtube.com/embed/oq3pSnwXWSA",5],
+       ["Cobblestone", "http://www.youtube.com/embed/Jz-GTF9tAOk",6],
+       ["Cobblestone", "http://www.youtube.com/embed/qbHkC40Kcmw",7],
+       ["Cobblestone", "http://www.youtube.com/embed/JjQHFrwpszY",8],
+       ["Cobblestone", "http://www.youtube.com/embed/ealMl7CUrjs",9],
+       ["Overpass", "http://www.youtube.com/embed/YbKEKWZoqpk",10],
+       ["Mirage", "http://www.youtube.com/embed/2j72wRXJ-cQ",11],
+       ["Cobblestone", "http://www.youtube.com/embed/jj30-V2fYuk",12],
+       ["Inferno", "http://www.youtube.com/embed/699smFGY69s",13],
+       ["Dust 2", "http://www.youtube.com/embed/V1dWMSSD0S4",14],
+       ["Train", "http://www.youtube.com/embed/1ThPMbp8rF8",15],
+       ["Dust 2 ", "http://www.youtube.com/embed/Y4Py_E-QA00",16],
+       ["Overpass", "http://www.youtube.com/embed/oc2-Uwf9QR0",17],
+       ["Mirage", "http://www.youtube.com/embed/MHQbOxIzjoU",18],
+       ["Mirage", "http://www.youtube.com/embed/wkI1Ce2pwUg",19],
+       ["Inferno", "http://www.youtube.com/embed/8o_g8wj_qbc",20],
+       ["Cache", "http://www.youtube.com/embed/o6WWm37jZrE",21],
+       ["Cache", "http://www.youtube.com/embed/zAaJSVOtjKU",22],
+       ["Dust 2", "http://www.youtube.com/embed/K9M9Y-WLRN8",23],
+       ["Train", "http://www.youtube.com/embed/Kw_d__GDsBQ",24],
+       ["Cobblestone", "http://www.youtube.com/embed/S6wVQI2VQZ8",25],
+       ["Mirage", "http://www.youtube.com/embed/2OgomRWyJgE",26],
+       ["Cobblestone", "http://www.youtube.com/embed/B3CgsadEXI0",27],
+       ["Cache", "http://www.youtube.com/embed/NE31g6jg7ok",28],
+       ["Cache", "http://www.youtube.com/embed/yk0GWBWSd5E", 29],
+       ["Train", "http://www.youtube.com/embed/2D4lXUU01x4", 30],
+       ["Train", "http://www.youtube.com/embed/O2S38DAcxTQ", 31],
+       ["Dust 2", "http://www.youtube.com/embed/vRuC-K_eKr0", 32],
+       ["Dust 2", "http://www.youtube.com/embed/G8-yxTIW-h0", 33],
+       ["Overpass", "http://www.youtube.com/embed/J49sRvAzB78",34],
+       ["Dust 2", "http://www.youtube.com/embed/n3E-WmbK3Is", 35],
+       ["Inferno", "http://www.youtube.com/embed/fT1f2_vSyuQ", 36],
+       ["Cache", "https://www.youtube.com/embed/V02cpWLWqu0", 37],
+       ["Train", "http://www.youtube.com/embed/38pj9LELyWM", 38],
+       ["Dust 2", "http://www.youtube.com/embed/WmiGMyayUe8", 39],
+       ["Train", "http://www.youtube.com/embed/Qh2vqiH2dgw", 40],
+       ["Cobblestone", "http://www.youtube.com/embed/L4HyDjy6kJ0", 41],
+       ["GameOver", "http://www.youtube.com/embed/dQw4w9WgXcQ", 42]
+
 ]
 
-games_list2.each_with_index do |game|
+games_list2.each_with_index do |game, i|
   Game.create(:map => game[0], :videolink => game[1], :match_id => matchid)
   matchid += 1
 end
