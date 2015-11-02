@@ -9,6 +9,6 @@
 
 <ul class="list-group">
 <% @matches.each do |match| %>
-<button type="button" class="list-group-item"><a href="/matches/<%= match.id %>">Match <%= match.matchorder %></a></button>
+<a class="list-group-item" href="/matches/<%= match.id %>">Match <%= match.matchorder %></a>
 <% end %>
 </ul>
