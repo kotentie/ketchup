@@ -8,7 +8,7 @@
 		<div class="col-xs-8">
 			<ul class="list-group">
 			<% @matches.each do |match, i| %>
-			<button type="button" class="list-group-item"><a href="matches/<%= match.id%>"> <%= match.name %></a></button>
+			<a class="list-group-item" href="matches/<%= match.id%>"> <%= match.name %></a>
 			<% end %>
 			</ul>
 		</div>

@@ -3,7 +3,7 @@
 		<div class="col-xs-8">
 			<ul class="list-group">
 			<% @tournaments.each do |tournament, i| %>
-				<button type="button" class="list-group-item"><a href="/tournaments/<%= tournament.id %>">Match <%= tournament.name %></a></button>
+				 <a class="list-group-item" href="/tournaments/<%= tournament.id %>">Match <%= tournament.name %></a>
 			<% end %>
 			</ul>
 		</div>
