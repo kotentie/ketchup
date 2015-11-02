@@ -15,12 +15,20 @@
 </div>
 
 <% @games.each do |game| %>
-<h3><%= game.map %></h3>
+<div class="row">
+<div class="col-xs-10">
+	<h3><%= game.map %></h3>
+<i>To skip ahead or back use the arrow keys, to pause press space</i>
+<p>&nbsp</p>
+</div>	
+</div>
 <div class="row">
 	<div class="col-xs-10">
 		<iframe src="<%=game.videolink%>?controls=0&showinfo=0&rel=0" frameborder="0" width="960" height="540" allowfullscreen></iframe>
 	</div>
 </div>
 <% end %>
-
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
 
