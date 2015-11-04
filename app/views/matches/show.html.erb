@@ -1,0 +1,41 @@
+
+<div class="row">
+	<div class="col-xs-2"> 
+		<a class="btn btn-primary pull-left" type="button" href="/matches/<%= @match.id - 1 %>">Previous</a>
+	</div>
+	<div class="col-xs-2 col-xs-offset-8">
+		<a class="btn btn-success pull-right" type="button" href="/matches/<%= @match.id + 1 %>">Next</a>
+	</div>
+</div>
+<div class="row">
+
+<div class="col-xs-10">
+	<h2><%= @match.name %>  </h2>
+</div>
+</div>
+
+<% @games.each do |game| %>
+<div class="row">
+	<div class="col-xs-10">
+		<h3><%= game.map %></h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-7">
+		<i>To skip ahead or back use the arrow keys, to pause press space</i>
+		<p>&nbsp</p>
+	</div>	
+	<div class="col-xs-2"> 
+		<a class="btn btn-danger pull-right" type="button" href="<%=game.videolink%>?controls=0&showinfo=0&rel=0">Full Screen</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-10">
+		<iframe src="<%=game.videolink%>?controls=0&showinfo=0&rel=0" frameborder="0" width="960" height="540" allowfullscreen></iframe>
+	</div>
+</div>
+<% end %>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+

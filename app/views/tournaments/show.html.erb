@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-xs-10">
+<h1> <%= @tournament.name %> </h1>
+</div>
+<div class="col-xs-2">
+	<a class="btn btn-primary pull-right" type="button" href="/matches">Back</a>
+</div>
+</div>
+
+<ul class="list-group">
+<% @matches.each do |match| %>
+<a class="list-group-item" href="/matches/<%= match.id %>">Match <%= match.matchorder %></a>
+<% end %>
+</ul>

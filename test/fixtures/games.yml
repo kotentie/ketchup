@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  map: MyString
+  score: MyString
+  videolink: MyString
+
+two:
+  map: MyString
+  score: MyString
+  videolink: MyString

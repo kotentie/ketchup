@@ -1,0 +1,16 @@
+	<div class="row">
+		<div class="col-xs-10">
+			<h1>CS:GO Matches</h1>
+		</div>
+		<div class="col-xs-2">
+			<a class="btn btn-primary pull-right" type="button" style="margin-top: 20px;" href="/matches">Back</a>
+		</div>
+		<div class="col-xs-8">
+			<ul class="list-group">
+			<% @matches.each do |match, i| %>
+			<a class="list-group-item" href="matches/<%= match.id%>"> <%= match.name %></a>
+			<% end %>
+			</ul>
+		</div>
+	</div>
+
