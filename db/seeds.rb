@@ -38,6 +38,7 @@ end
 
 tournament = Tournament.create(:name => 'Dubia Invitational 2015', :org => 'ESL ESEA', :datestart => '9/08/2015', :datefinish => '9/13/2015')
 tournament2 = Tournament.create(:name => 'DreamHack Cluj-Napoca', :org => 'DreamHack', :datestart => '10/28/2015', :datefinish => '11/01/2015')
+tournament3 = Tournament.create(:name => 'IEM San Jose', :org => 'IEM', :datestart => '11/21/2015', :datefinish => '11/23/2015')
 
 
 
@@ -111,10 +112,32 @@ match_list2 = [
        ["EnVyUs vs. Natus Vincere - Train - Grand-final - Game 1", 40, tournament2.id],
        ["EnVyUs vs. Natus Vincere - Cobblestone - Grand-final - Game 2", 41, tournament2.id],
        ["This Game is Just Here So you can't see that it was a two map final", 42, tournament2.id]
-
-
   
 ]
+
+
+match_list3 = [ 
+
+  ["G2 vs.  CLG", 1, tournament3.id],
+  ["G2 vs.  CLG", 2, tournament3.id],
+  ["C9 vs.  TSM", 3, tournament3.id],
+  ["C9  vs. TSM", 4, tournament3.id],
+  ["C9 vs. TSM", 5, tournament3.id],
+  ["NaVi vs.  LG", 6, tournament3.id],
+  ["NaVi vs.  LG", 7, tournament3.id],
+  ["TL vs.  VP", 8, tournament3.id],
+  ["TL vs.  VP", 9, tournament3.id],
+  ["Winner of A vs. Winner of B", 10, tournament3.id],
+  ["Winner of A vs. Winner of B", 11, tournament3.id],
+  ["Winner of A vs. Winner of B", 12, tournament3.id],
+  ["Winner of C vs. Winner of D", 13, tournament3.id],
+  ["Winner of C vs. Winner of D", 14, tournament3.id],
+  ["Winner of E vs. Winner of F", 15, tournament3.id],
+  ["Winner of E vs. Winner of F", 16, tournament3.id],
+  ["Winner of E vs. Winner of F", 17, tournament3.id]
+
+]
+
 
 
 match_list.each do |match|
@@ -125,31 +148,35 @@ match_list2.each do |match|
   Match.create( :name => match[0], :matchorder => match[1], :tournament_id => match[2])
 end
 
+match_list3.each do |match|
+  Match.create( :name => match[0], :matchorder => match[1], :tournament_id => match[2])
+end
+
 
 games_list = [
-	["Cobblestone", "http://www.youtube.com/embed/kYRw_DdlnmE",1],
-	["Mirage", "http://www.youtube.com/embed/LHgdZR4fAcU",2],
-	["Cobblestone", "http://www.youtube.com/embed/EFawjRIzR2s",3],
-	["Overpass", "http://www.youtube.com/embed/PSRAZndiOhc",4],
-	["Cache", "http://www.youtube.com/embed/MrlGbfgPR28",5],
-  ["Dust2", "http://www.youtube.com/embed/IPz8IWBxejI",6],
-  ["Cobblestone", "http://www.youtube.com/embed/bC49ebnTlUI",7],
-  ["Dust2", "http://www.youtube.com/embed/1eq3ZroT0fc",8],
-  ["Dust2", "http://www.youtube.com/embed/OhYc8Llowgg", 9],
-  ["Inferno", "http://www.youtube.com/embed/b6Slbne36So", 10],
-  ["Train", "http://www.youtube.com/embed/29oeTvuxMo", 11],
-  ["Inferno", "http://www.youtube.com/embed/zAGQBt_VhqU", 12],
-  ["Dust2", "http://www.youtube.com/embed/cWTb_MzfwQM", 13],
-  ["Mirage", "http://www.youtube.com/embed/GFj4-OcXRDg",14],
-  ["Inferno", "http://www.youtube.com/embed/Qz5ErHaVsUc",15],
-  ["Cobblestone", "http://www.youtube.com/embed/u7iHcbdHpT0",16],
-  ["Train", "http://www.youtube.com/embed/x2GQ9KCQIEs",17],
-  ["Cache", "http://www.youtube.com/embed/oi9zwKpOKh8",18],
-  ["Overpass", "http://www.youtube.com/embed/DA0iptQxFZQ",19],
-  ["Train", "http://www.youtube.com/embed/tncJS5DLDsc",20],
-  ["Dust2", "http://www.youtube.com/embed/VpBNVJkZMpE",21],
-  ["Cobblestone", "http://www.youtube.com/embed/CnTs9itCCHQ",22],
-  ["Mirage", "http://www.youtube.com/embed/_uXxcMuTuMg",23]
+	["Cobblestone", "http://www.youtube.com/embed/kYRw_DdlnmE?",1],
+	["Mirage", "http://www.youtube.com/embed/LHgdZR4fAcU?",2],
+	["Cobblestone", "http://www.youtube.com/embed/EFawjRIzR2s?",3],
+	["Overpass", "http://www.youtube.com/embed/PSRAZndiOhc?",4],
+	["Cache", "http://www.youtube.com/embed/MrlGbfgPR28?",5],
+  ["Dust2", "http://www.youtube.com/embed/IPz8IWBxejI?",6],
+  ["Cobblestone", "http://www.youtube.com/embed/bC49ebnTlUI?",7],
+  ["Dust2", "http://www.youtube.com/embed/1eq3ZroT0fc?",8],
+  ["Dust2", "http://www.youtube.com/embed/OhYc8Llowgg?", 9],
+  ["Inferno", "http://www.youtube.com/embed/b6Slbne36So?", 10],
+  ["Train", "http://www.youtube.com/embed/29oeTvuxMo?", 11],
+  ["Inferno", "http://www.youtube.com/embed/zAGQBt_VhqU?", 12],
+  ["Dust2", "http://www.youtube.com/embed/cWTb_MzfwQM?", 13],
+  ["Mirage", "http://www.youtube.com/embed/GFj4-OcXRDg?",14],
+  ["Inferno", "http://www.youtube.com/embed/Qz5ErHaVsUc?",15],
+  ["Cobblestone", "http://www.youtube.com/embed/u7iHcbdHpT0?",16],
+  ["Train", "http://www.youtube.com/embed/x2GQ9KCQIEs?",17],
+  ["Cache", "http://www.youtube.com/embed/oi9zwKpOKh8?",18],
+  ["Overpass", "http://www.youtube.com/embed/DA0iptQxFZQ?",19],
+  ["Train", "http://www.youtube.com/embed/tncJS5DLDsc?",20],
+  ["Dust2", "http://www.youtube.com/embed/VpBNVJkZMpE?",21],
+  ["Cobblestone", "http://www.youtube.com/embed/CnTs9itCCHQ?",22],
+  ["Mirage", "http://www.youtube.com/embed/_uXxcMuTuMg?",23]
 
 
 ]
@@ -165,52 +192,80 @@ matchid += 1
 
 games_list2 = [
 
-       ["Dust 2", "http://www.youtube.com/embed/xRQy4PpBkAU" ,1],
-       ["Cobblestone", "http://www.youtube.com/embed/9Tw3qcNbzhA",2],
-       ["Cobblestone", "http://www.youtube.com/embed/101eoTIJ6sM",3],
-       ["Inferno", "http://www.youtube.com/embed/-9NZL4UQNl8",4],
-       ["Cobblestone", "http://www.youtube.com/embed/oq3pSnwXWSA",5],
-       ["Cobblestone", "http://www.youtube.com/embed/Jz-GTF9tAOk",6],
-       ["Cobblestone", "http://www.youtube.com/embed/qbHkC40Kcmw",7],
-       ["Cobblestone", "http://www.youtube.com/embed/JjQHFrwpszY",8],
-       ["Cobblestone", "http://www.youtube.com/embed/ealMl7CUrjs",9],
-       ["Overpass", "http://www.youtube.com/embed/YbKEKWZoqpk",10],
-       ["Mirage", "http://www.youtube.com/embed/2j72wRXJ-cQ",11],
-       ["Cobblestone", "http://www.youtube.com/embed/jj30-V2fYuk",12],
-       ["Inferno", "http://www.youtube.com/embed/699smFGY69s",13],
-       ["Dust 2", "http://www.youtube.com/embed/V1dWMSSD0S4",14],
-       ["Train", "http://www.youtube.com/embed/1ThPMbp8rF8",15],
-       ["Dust 2 ", "http://www.youtube.com/embed/Y4Py_E-QA00",16],
-       ["Overpass", "http://www.youtube.com/embed/oc2-Uwf9QR0",17],
-       ["Mirage", "http://www.youtube.com/embed/MHQbOxIzjoU",18],
-       ["Mirage", "http://www.youtube.com/embed/wkI1Ce2pwUg",19],
-       ["Inferno", "http://www.youtube.com/embed/8o_g8wj_qbc",20],
-       ["Cache", "http://www.youtube.com/embed/o6WWm37jZrE",21],
-       ["Cache", "http://www.youtube.com/embed/zAaJSVOtjKU",22],
-       ["Dust 2", "http://www.youtube.com/embed/K9M9Y-WLRN8",23],
-       ["Train", "http://www.youtube.com/embed/Kw_d__GDsBQ",24],
-       ["Cobblestone", "http://www.youtube.com/embed/S6wVQI2VQZ8",25],
-       ["Mirage", "http://www.youtube.com/embed/2OgomRWyJgE",26],
-       ["Cobblestone", "http://www.youtube.com/embed/B3CgsadEXI0",27],
-       ["Cache", "http://www.youtube.com/embed/NE31g6jg7ok",28],
-       ["Cache", "http://www.youtube.com/embed/yk0GWBWSd5E", 29],
-       ["Train", "http://www.youtube.com/embed/2D4lXUU01x4", 30],
-       ["Train", "http://www.youtube.com/embed/O2S38DAcxTQ", 31],
-       ["Dust 2", "http://www.youtube.com/embed/vRuC-K_eKr0", 32],
-       ["Dust 2", "http://www.youtube.com/embed/G8-yxTIW-h0", 33],
-       ["Overpass", "http://www.youtube.com/embed/J49sRvAzB78",34],
-       ["Dust 2", "http://www.youtube.com/embed/n3E-WmbK3Is", 35],
-       ["Inferno", "http://www.youtube.com/embed/fT1f2_vSyuQ", 36],
-       ["Cache", "https://www.youtube.com/embed/V02cpWLWqu0", 37],
-       ["Train", "http://www.youtube.com/embed/38pj9LELyWM", 38],
-       ["Dust 2", "http://www.youtube.com/embed/WmiGMyayUe8", 39],
-       ["Train", "http://www.youtube.com/embed/Qh2vqiH2dgw", 40],
-       ["Cobblestone", "http://www.youtube.com/embed/L4HyDjy6kJ0", 41],
-       ["GameOver", "http://www.youtube.com/embed/dQw4w9WgXcQ", 42]
+       ["Dust 2", "http://www.youtube.com/embed/xRQy4PpBkAU?" ,1],
+       ["Cobblestone", "http://www.youtube.com/embed/9Tw3qcNbzhA?",2],
+       ["Cobblestone", "http://www.youtube.com/embed/101eoTIJ6sM?",3],
+       ["Inferno", "http://www.youtube.com/embed/-9NZL4UQNl8?",4],
+       ["Cobblestone", "http://www.youtube.com/embed/oq3pSnwXWSA?",5],
+       ["Cobblestone", "http://www.youtube.com/embed/Jz-GTF9tAOk?",6],
+       ["Cobblestone", "http://www.youtube.com/embed/qbHkC40Kcmw?",7],
+       ["Cobblestone", "http://www.youtube.com/embed/JjQHFrwpszY?",8],
+       ["Cobblestone", "http://www.youtube.com/embed/ealMl7CUrjs?",9],
+       ["Overpass", "http://www.youtube.com/embed/YbKEKWZoqpk?",10],
+       ["Mirage", "http://www.youtube.com/embed/2j72wRXJ-cQ?",11],
+       ["Cobblestone", "http://www.youtube.com/embed/jj30-V2fYuk?",12],
+       ["Inferno", "http://www.youtube.com/embed/699smFGY69s?",13],
+       ["Dust 2", "http://www.youtube.com/embed/V1dWMSSD0S4?",14],
+       ["Train", "http://www.youtube.com/embed/1ThPMbp8rF8?",15],
+       ["Dust 2 ", "http://www.youtube.com/embed/Y4Py_E-QA00?",16],
+       ["Overpass", "http://www.youtube.com/embed/oc2-Uwf9QR0?",17],
+       ["Mirage", "http://www.youtube.com/embed/MHQbOxIzjoU?",18],
+       ["Mirage", "http://www.youtube.com/embed/wkI1Ce2pwUg?",19],
+       ["Inferno", "http://www.youtube.com/embed/8o_g8wj_qbc?",20],
+       ["Cache", "http://www.youtube.com/embed/o6WWm37jZrE?",21],
+       ["Cache", "http://www.youtube.com/embed/zAaJSVOtjKU?",22],
+       ["Dust 2", "http://www.youtube.com/embed/K9M9Y-WLRN8?",23],
+       ["Train", "http://www.youtube.com/embed/Kw_d__GDsBQ?",24],
+       ["Cobblestone", "http://www.youtube.com/embed/S6wVQI2VQZ8?",25],
+       ["Mirage", "http://www.youtube.com/embed/2OgomRWyJgE?",26],
+       ["Cobblestone", "http://www.youtube.com/embed/B3CgsadEXI0?",27],
+       ["Cache", "http://www.youtube.com/embed/NE31g6jg7ok?",28],
+       ["Cache", "http://www.youtube.com/embed/yk0GWBWSd5E?", 29],
+       ["Train", "http://www.youtube.com/embed/2D4lXUU01x4?", 30],
+       ["Train", "http://www.youtube.com/embed/O2S38DAcxTQ?", 31],
+       ["Dust 2", "http://www.youtube.com/embed/vRuC-K_eKr0?", 32],
+       ["Dust 2", "http://www.youtube.com/embed/G8-yxTIW-h0?", 33],
+       ["Overpass", "http://www.youtube.com/embed/J49sRvAzB78?",34],
+       ["Dust 2", "http://www.youtube.com/embed/n3E-WmbK3Is?", 35],
+       ["Inferno", "http://www.youtube.com/embed/fT1f2_vSyuQ?", 36],
+       ["Cache", "https://www.youtube.com/embed/V02cpWLWqu0?", 37],
+       ["Train", "http://www.youtube.com/embed/38pj9LELyWM?", 38],
+       ["Dust 2", "http://www.youtube.com/embed/WmiGMyayUe8?", 39],
+       ["Train", "http://www.youtube.com/embed/Qh2vqiH2dgw?", 40],
+       ["Cobblestone", "http://www.youtube.com/embed/L4HyDjy6kJ0?", 41],
+       ["GameOver", "http://www.youtube.com/embed/dQw4w9WgXcQ?", 42]
 
 ]
 
 games_list2.each_with_index do |game, i|
+  Game.create(:map => game[0], :videolink => game[1], :match_id => matchid)
+  matchid += 1
+end
+
+
+games_list3 = [
+
+    ["Mirage", "http://www.youtube.com/embed/z5XXPJ8xfgI?", 1],
+    ["Cache", "http://www.youtube.com/embed/FbQ-dS1UC0M?", 2],
+    ["Overpass", "http://www.youtube.com/embed/N_VrT5nYioU?&start=1164", 3],
+    ["Cache", "http://www.youtube.com/embed/t7grbw1P-V8?", 4],
+    ["Dust 2", "http://www.youtube.com/embed/3tZR0B0fam8?", 5],
+    ["Mirage", "http://www.youtube.com/embed/wRxwIpI8mSc?", 6],
+    ["Overpass", "http://www.youtube.com/embed/nrA_ZClfbE8?", 7],
+    ["Overpass", "http://www.youtube.com/embed/yL0edcxwMl0?", 8],
+    ["Mirage", "http://www.youtube.com/embed/SDgdQyzxs7s?", 9],
+    ["Cache", "http://www.youtube.com/embed/m9n5MnmZGVE?&start=971", 10],
+    ["Overpass", "http://www.youtube.com/embed/NnhXdQFt988?&start=187", 11],
+    ["Mirage", "http://www.youtube.com/embed/bUruFfWIIkU?&start=113", 12],
+    ["Cobble", "http://www.youtube.com/embed/aAo3nhmpyOE?&start=289", 13],
+    ["Dust 2", "http://www.youtube.com/embed/ldvyKwPi6cU?&start=281", 14],
+    ["Dust 2", "http://www.youtube.com/embed/k_vg4B3KzYo?&start=953", 15],
+    ["Cbble", "http://www.youtube.com/embed/pJCykYL1tWo?", 16],
+    ["Rick Rolled Again Bro", "http://www.youtube.com/embed/dQw4w9WgXcQ?", 17]
+
+]
+
+games_list3.each_with_index do |game, i|
   Game.create(:map => game[0], :videolink => game[1], :match_id => matchid)
   matchid += 1
 end
